@@ -1,0 +1,4 @@
+ background-image: linear-gradient(to bottom,#3198e2, #6d59c0,#e33f5f, #fdd579);
+cores do insta
+
+height: 100%; 

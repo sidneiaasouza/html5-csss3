@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title> Fontes com Googlle Fonts</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+        body {
+            font-family: 'Work Sans', Arial, verdana, sans-serif;
+            font-size: 16px;
+            color: rgb(0, 0, 0);
+        }
+
+        h1 {
+            font-family: 'Fredericka the Great', cursive;
+            font-size: 3em;
+            color: blue;
+        }
+
+        h2 {
+            font-family: 'Fredericka the Great', cursive;
+            font-size: 2em;
+            color: blue;
+        }
+
+        /* ul li:nth-child(3){
+            color: red;
+        } */
+
+
+        /* ul li[class="dedo-3"]{
+            color: red;
+        } */
+
+        /* ul li.dedo-3{
+            color: red;
+        } */
+
+        /* ul li#dedo-3{
+            color: red;
+        } */
+
+
+        ul li.dedo {
+            color: red;
+        }
+
+        ul li.dedo.azul {
+            color: blue;
+        }
+
+        a.menu {
+            text-transform: uppercase;
+            color: aqua;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <ul>
+        <li class="dedo">Dedo 1 - <a href="" class="menu">Home</a></li>
+        <li class="dedo azul">Dedo 2 - <a href="" class="menu">Quem Somos</a></li>
+        <li class="dedo ">Dedo 3 - <a href="" class="menu">Produtos</a></li>
+        <li class="dedo">Dedo 4 - <a href="" class="menu">Trabalhe Conosco</a></li>
+        <li class="dedo">Dedo 5 -
+            <a href="javascript:;" class="menu-contato">Contato</a>
+        </li>
+    </ul>
+
+    <h1>Titulo</h1>
+    <input type="text" placeholder="Qual é o seu nome?" class="campo-nome">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, quasi. Totam sequi, dignissimos, error itaque
+        esse blanditiis sunt nobis similique quia consequatur porro repellat accusamus ullam praesentium optio ea
+        libero!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eaque, consequuntur eligendi harum blanditiis sint
+        tempore, eveniet, obcaecati dolores ex iste ullam molestias facilis? Voluptates ex inventore soluta sapiente
+        asperiores.</p>
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium nulla dignissimos odio ea ducimus sunt
+        tenetur nemo, blanditiis officiis possimus dolorem nisi numquam molestias nostrum quas quasi. Optio, ea
+        voluptate!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, culpa nostrum aperiam ipsa obcaecati sint facere
+        excepturi, accusamus ut hic facilis, est magnam qui maiores voluptas earum tempore. Veniam, suscipit?</p>
+
+
+
+    <script>
+
+
+
+        document.querySelector(".menu-contato").addEventListener('click', () => {
+            document.querySelector('h1').innerHTML = 'Pagina de contato'
+        })
+
+
+
+        document.querySelector('.campo-nome').addEventListener("change", (e) => {
+
+            const nome = e.target.value;
+
+            
+
+            if(nome == "neia"){
+                document.querySelector('h1').innerHTML = "Seja bem-vindo "+nome+"\nVocê é Maravi!!!!!"
+            }else{
+                document.querySelector('h1').innerHTML = "Seja bem-vindo "+nome
+            }
+
+            
+        })
+
+
+    </script>
+</body>
+
+</html>
